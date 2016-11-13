@@ -4,4 +4,14 @@ from set_credentials import set_credentials
 
 set_credentials()
 
-temps = [(10,97.36), (11,97.43), (12,97.37), (13,98.18)]
+days = [10, 11, 12, 13]
+temps = [97.36, 97.43, 97.37, 98.18]
+
+trace = go.Scatter(
+    x = days,
+    y= temps
+)
+
+data = [trace]
+
+plot_url = py.plot(data, filename='bbt')
