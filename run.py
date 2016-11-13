@@ -1,4 +1,4 @@
 import plotly
-import set_credentials
+from set_credentials import set_credentials
 
 set_credentials()
