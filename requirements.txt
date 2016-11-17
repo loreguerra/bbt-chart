@@ -1,4 +1,4 @@
 plotly==1.12.9
 pytz==2016.7
-requests==2.11.1
+requests==2.12.1
 six==1.10.0
