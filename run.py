@@ -1,6 +1,6 @@
 import plotly.plotly as py
 import plotly.graph_objs as go
-from set_credentials import set_credentials
+from credentials import set_credentials
 
 set_credentials()
 
