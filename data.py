@@ -1,6 +1,8 @@
 import requests
 from requests_oauthlib import OAuth1
 
+from datetime import datetime
+
 import json
 
 from credentials import *
@@ -28,7 +30,9 @@ def get_temp(tweet):
     return temp
 
 def get_date(tweet):
-    date =
+    date = 
+    # date = datetime.strptime(tweet, '%d')
+    print date
 
 temps = list(get_temp(tweet_data[i]['text']) for i in range(tweet_count))
 
