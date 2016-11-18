@@ -18,9 +18,9 @@ r = requests.get(url, auth=auth)
 data = r.json()
 
 tweet_data = data['statuses']
-tweets = len(tweet_data)
+tweet_count = len(tweet_data)
 
-for i in range(tweets):
+for i in range(tweet_count):
     print tweet_data[i]['text']
 
 
