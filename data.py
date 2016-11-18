@@ -34,7 +34,7 @@ def get_date(tweet):
     raw_date = tweet.split(' ')
     date = list(raw_date[x] for x in values_to_keep)
     date = ' '.join(date)
-    # date = datetime.strptime(tweet, '%d')
+    date = datetime.strptime(date, '%b %d %Y')
     print date
 
 temps = list(get_temp(tweet_data[i]['text']) for i in range(tweet_count))
