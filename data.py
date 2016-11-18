@@ -27,8 +27,7 @@ def get_temp(tweet):
     temp = float(temp) / 100
     return temp
 
-temps = list(get_temp(tweet_data[0]['text']))
-print temps
+temps = list(get_temp(tweet_data[i]['text']) for i in range(tweet_count))
 
 # may have to reverse lists to display correctly - 0 is newest tweet and should be oldest
 
