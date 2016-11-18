@@ -5,17 +5,19 @@ from credentials import set_credentials
 
 set_credentials()
 
-days = [10, 11, 12, 13, 14]
-temps = [97.36, 97.43, 97.37, 98.18, 96.9]
+# days = [10, 11, 12, 13, 14]
+# temps = [97.36, 97.43, 97.37, 98.18, 96.9]
 
-#install twitter tools, get data, clean up data, organize data
-#gather data from @mentions on bbt_chart timeline with run.py
+dates = ['11-18-2016', '11-17-2016', '11-16-2016']
+temps = [97.36, 97.32, 96.69]
+
 #post plotly chart via twitter and @mention originating account (me)
 #add color marker for cycle day 1
 #add color marker for temp spikes
+#separate months and graph separately or on top of each other?
 
 trace = go.Scatter(
-    x = days,
+    x = dates,
     y= temps
 )
 
