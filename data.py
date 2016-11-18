@@ -20,7 +20,6 @@ data = r.json()
 tweet_data = data['statuses']
 tweet_count = len(tweet_data)
 
-temps = []
 dates = []
 
 def get_temp(tweet):
@@ -28,7 +27,8 @@ def get_temp(tweet):
     temp = float(temp) / 100
     return temp
 
-get_temp(tweet_data[0]['text'])
+temps = list(get_temp(tweet_data[0]['text']))
+print temps
 
 # may have to reverse lists to display correctly - 0 is newest tweet and should be oldest
 
