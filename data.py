@@ -30,9 +30,11 @@ def get_temp(tweet):
     return temp
 
 def get_date(tweet):
-    date = 
+    values_to_keep = [1,2,5]
+    raw_date = tweet.split(' ')
+    new_date = list(raw_date[x] for x in values_to_keep)
     # date = datetime.strptime(tweet, '%d')
-    print date
+    print new_date
 
 temps = list(get_temp(tweet_data[i]['text']) for i in range(tweet_count))
 
