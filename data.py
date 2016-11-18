@@ -25,8 +25,7 @@ dates = []
 
 def get_temp(tweet):
     temp = filter(lambda x: x.isdigit(), tweet)
-    temp = float(temp) / 100
-    temps.append(temp)
+    temps.append(float(temp) / 100)
     print temps
 
 get_temp(tweet_data[0]['text'])
