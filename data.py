@@ -20,9 +20,22 @@ data = r.json()
 tweet_data = data['statuses']
 tweet_count = len(tweet_data)
 
-for i in range(tweet_count):
-    print tweet_data[i]['text']
+temps = []
+dates = []
+
+def get_temp(tweet):
 
 
+get_temp(tweet_data[0]'text')
+
+# may have to reverse lists to display correctly - 0 is newest tweet and should be oldest
+
+# date is 'created_at'
+
+# change to list comprehension
+# for i in range(tweet_count):
+#     print tweet_data[i]['text']
+
+# dump data for viewing
 # with open('data.json', 'w') as f:
 #     json.dump(data, f)
