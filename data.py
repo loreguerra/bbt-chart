@@ -33,13 +33,12 @@ def get_date(tweet):
     values_to_keep = [1,2,5]
     raw_date = tweet.split(' ')
     date = list(raw_date[x] for x in values_to_keep)
-    date = ' '.join(date)
-    date = datetime.strptime(date, '%b %d %Y')
-    print date
+    date = datetime.strptime((' '.join(date)), '%b %d %Y')
+    return date
 
 temps = list(get_temp(tweet_data[i]['text']) for i in range(tweet_count))
 
-get_date(tweet_data[0]['created_at'])
+dates = list(get_date(tweet_data[i]['created_at']) for i in range(tweet_count)
 
 # may have to reverse lists to display correctly - 0 is newest tweet and should be oldest
 
