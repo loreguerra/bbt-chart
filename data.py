@@ -24,9 +24,12 @@ temps = []
 dates = []
 
 def get_temp(tweet):
+    temp = filter(lambda x: x.isdigit(), tweet)
+    temp = float(temp) / 100
+    temps.append(temp)
+    print temps
 
-
-get_temp(tweet_data[0]'text')
+get_temp(tweet_data[0]['text'])
 
 # may have to reverse lists to display correctly - 0 is newest tweet and should be oldest
 
