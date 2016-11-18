@@ -17,6 +17,12 @@ auth = OAuth1(consumer_key, consumer_secret, access_token, access_token_secret)
 r = requests.get(url, auth=auth)
 data = r.json()
 
-print data["statuses"][0]["text"]
+tweet_data = data['statuses']
+tweets = len(tweet_data)
+
+for i in range(tweets):
+    print tweet_data[i]['text']
+
+
 # with open('data.json', 'w') as f:
 #     json.dump(data, f)
