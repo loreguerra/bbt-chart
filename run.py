@@ -14,6 +14,7 @@ dates = dates
 temps = temps
 
 #post plotly chart via twitter and @mention originating account (me)
+#add hashtag for date
 #add color marker for cycle day 1
 #add color marker for temp spikes
 #separate months and graph separately or on top of each other?
