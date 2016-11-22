@@ -13,7 +13,7 @@ set_credentials()
 dates = dates
 temps = temps
 
-#post plotly chart via twitter and @mention originating account (me)
+#post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
 #add hashtag for date
 #add color marker for cycle day 1
 #add color marker for temp spikes
@@ -28,3 +28,4 @@ trace = go.Scatter(
 data = [trace]
 
 plot_url = py.plot(data, filename='bbt')
+#save image, convert to binary, post to twitter, import auth from data
