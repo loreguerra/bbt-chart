@@ -18,6 +18,7 @@ temps = temps
 #add color marker for cycle day 1
 #add color marker for temp spikes
 #separate months and graph separately or on top of each other?
+#change usernames to variables
 
 trace = go.Scatter(
     x = dates,
