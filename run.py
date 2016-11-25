@@ -15,7 +15,7 @@ temps = temps
 
 #post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
 #add hashtag for date
-#add color marker for cycle day 1
+# cycle day 1 separate graph
 #add color marker for temp spikes
 #separate months and graph separately or on top of each other?
 #change usernames to variables
