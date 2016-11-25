@@ -28,12 +28,14 @@ tweet_count = len(tweet_data)
 # will have to split tweet into array and grab [1] instead of filtering for digits
 # then convert to float
 
-# cycle day 1 can sit as a separate graph on top 
+# cycle day 1 can sit as a separate graph on top
 
-def get_temp(tweet):
-    temp = filter(lambda x: x.isdigit(), tweet)
-    temp = float(temp) / 100
-    return temp
+def get_temp_data(tweet):
+    tweet = tweet.split(' ')
+    print tweet
+    # temp = filter(lambda x: x.isdigit(), tweet)
+    # temp = float(temp) / 100
+    # return temp
 
 def get_date(tweet):
     values_to_keep = [1,2,5]
@@ -43,7 +45,7 @@ def get_date(tweet):
     date = datetime.strptime(date, '%b %d %Y')
     return date
 
-temps = list(get_temp(tweet_data[i]['text']) for i in range(tweet_count))
+temps = list(get_temp_data(tweet_data[i]['text']) for i in range(tweet_count))
 
 dates = list(get_date(tweet_data[i]['created_at']) for i in range(tweet_count))
 
