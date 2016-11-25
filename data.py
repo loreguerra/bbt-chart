@@ -24,8 +24,11 @@ tweet_count = len(tweet_data)
 
 # read tweet, if tweet contains '-d', create datetime object, append to list
 # else, get_date()
+# sort datetime objects to display correctly
 # will have to split tweet into array and grab [1] instead of filtering for digits
 # then convert to float
+
+# cycle day 1 can sit as a separate graph on top 
 
 def get_temp(tweet):
     temp = filter(lambda x: x.isdigit(), tweet)
