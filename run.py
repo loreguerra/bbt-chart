@@ -7,8 +7,8 @@ from data import temps, dates
 
 set_credentials()
 
-# dates = [10, 11, 12, 13, 14]
-# temps = [97.36, 97.43, 97.37, 98.18, 96.9]
+# dates = [10, 11, 12, 13, 14, 15]
+# temps = [97.36, 97.43, 97.37, 98.18, 96.9, 97.24]
 
 dates = dates
 temps = temps
