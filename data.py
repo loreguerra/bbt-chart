@@ -32,7 +32,8 @@ tweet_count = len(tweet_data)
 
 def get_temp_data(tweet):
     tweet = tweet.split(' ')
-    print tweet
+    temp = tweet[1]
+    return temp
     # temp = filter(lambda x: x.isdigit(), tweet)
     # temp = float(temp) / 100
     # return temp
