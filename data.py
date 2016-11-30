@@ -22,7 +22,7 @@ data = r.json()
 tweet_data = data['statuses']
 tweet_count = len(tweet_data)
 
-# read tweet, if tweet contains '-d', create datetime object, append to list
+# read tweet, split and check for extra list items
 # else, get_date()
 # sort datetime objects to display correctly
 # will have to split tweet into array and grab [1] instead of filtering for digits
