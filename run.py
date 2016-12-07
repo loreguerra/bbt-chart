@@ -3,7 +3,7 @@ import plotly.graph_objs as go
 
 from credentials import set_credentials
 
-from data import temps, dates
+# from data import temps, dates
 
 set_credentials()
 
@@ -13,13 +13,9 @@ set_credentials()
 dates = dates
 temps = temps
 
-#twitter api only goes back so far. Post to database?
-#still post chart to twitter?
 #post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
-#add hashtag for date
 # cycle day 1 separate graph
 #add color marker for temp spikes
-#separate months and graph separately or on top of each other?
 #change usernames to variables
 
 trace = go.Scatter(
