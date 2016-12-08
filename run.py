@@ -5,7 +5,7 @@ from credentials import set_credentials
 
 import psycopg2
 
-conn = psycopg2.connect(database='bbt_chart', user='postgres', password='')
+conn = psycopg2.connect(database='bbt_chart', user='lorena', password='')
 
 # from data import temps, dates
 
