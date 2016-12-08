@@ -1,1 +1,1 @@
-DATABASE = {'database': 'bbt_chart', 'user': 'lorena', 'password': ''}
+db_info = {'database': 'bbt_chart', 'user': 'lorena', 'password': ''}
