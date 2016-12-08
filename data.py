@@ -6,4 +6,5 @@ database = db_info['database']
 user = db_info['user']
 password = db_info['password']
 
-conn = psycopg2.connect(database='bbt_chart', user='lorena', password='')
+conn = psycopg2.connect(database=database, user=user, password=password)
+print "opened"
