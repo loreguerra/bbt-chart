@@ -10,8 +10,7 @@ from connect import connect_to_db
 conn = connect_to_db()
 cur = conn.cursor()
 cur.execute("""CREATE TABLE BBT_CHART
-        (ID INT PRIMARY KEY  NOT NULL,
-        DATE DATE   NOT NULL,
+        (DATE DATE   NOT NULL,
         TEMP REAL   NOT NULL);""")
 print 'BBT chart table created successfully'
 conn.commit()
