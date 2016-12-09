@@ -1,7 +1,5 @@
 import psycopg2
 
-from settings import db_info
-
 from connect import connect_to_db
 
 # add argparse for options via command line
