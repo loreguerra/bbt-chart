@@ -32,7 +32,3 @@ def create_temps_table():
 def add_temp(date, temp):
     print date, temp
     # conn = connect_to_db()
-
-connect_to_db()
-create_temps_table()
-add_temp()
