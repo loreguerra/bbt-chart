@@ -2,6 +2,10 @@ import psycopg2
 
 from settings import db_info
 
+import sys
+
+# add getopt for options via command line
+
 database = db_info['database']
 user = db_info['user']
 password = db_info['password']
@@ -20,6 +24,8 @@ def create_temps_table():
     print 'Table created successfully'
     conn.commit()
     conn.close()
+
+def add_temp():
 
 connect_to_db()
 create_temps_table()
