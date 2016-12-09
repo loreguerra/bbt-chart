@@ -12,5 +12,3 @@ def connect_to_db():
     conn = psycopg2.connect(database=database, user=user, password=password)
     print 'Connected to %s' % database
     return conn
-
-connect_to_db()
