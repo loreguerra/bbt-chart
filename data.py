@@ -4,7 +4,7 @@ from settings import db_info
 
 import sys
 
-# add getopt for options via command line
+# add argparse for options via command line
 
 # set database info variables
 database = db_info['database']
