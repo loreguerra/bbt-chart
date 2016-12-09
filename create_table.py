@@ -15,6 +15,6 @@ cur.execute("""CREATE TABLE BBT_CHART
         (ID INT PRIMARY KEY  NOT NULL,
         DATE DATE   NOT NULL,
         TEMP REAL   NOT NULL);""")
-print 'Table created successfully'
+print 'BBT chart table created successfully'
 conn.commit()
 conn.close()
