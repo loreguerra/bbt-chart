@@ -16,5 +16,6 @@ conn = connect_to_db()
 cur = conn.cursor()
 SQL = "INSERT INTO BBT_CHART (DATE, TEMP) VALUES (%s, %s);"
 cur.execute(SQL, data)
+print "Temperature data added"
 conn.commit()
 conn.close()
