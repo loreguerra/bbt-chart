@@ -29,7 +29,10 @@ def create_temps_table():
     conn.close()
 
 # add new temperature and date
-def add_temp():
+def add_temp(date, temp):
+    print date, temp
+    # conn = connect_to_db()
 
 connect_to_db()
 create_temps_table()
+add_temp()
