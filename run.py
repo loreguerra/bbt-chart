@@ -5,10 +5,9 @@ from credentials import set_credentials
 
 import psycopg2
 
-conn = psycopg2.connect(database='bbt_chart', user='lorena', password='')
+from connect import connect_to_db
 
-# from data import temps, dates
-
+# set plotly credentials
 set_credentials()
 
 dates = dates
