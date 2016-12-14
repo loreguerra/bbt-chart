@@ -18,8 +18,8 @@ cur.execute("SELECT DATE, TEMP from BBT_CHART")
 rows = cur.fetchall()
 rows = sorted(rows)
 
-# dates = list(for row in rows)
-
+dates = list(row[1] for row in rows)
+print dates
 
 #post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
 # cycle day 1 separate graph
