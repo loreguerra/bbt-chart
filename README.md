@@ -31,7 +31,7 @@ Run create_table.py in the command line.
 python create_table.py
 ```
 
-Add your data from command line with add_data.py.
+Add your data from command line with add_data.py. The two arguments consist of the date (ex: 2016-12-14) and temperature to two decimal places (ex: 97.21). Previous data can be added in this way as well; all dates get sorted before being graphed.
 
 ```
 python add_data.py YYYY-MM-DD ##.##
