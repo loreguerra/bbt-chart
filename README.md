@@ -46,6 +46,7 @@ python run.py
 ## Features to add
 - Marker for temperature spikes
 - Marker for day one of cycles
+- Marker for positive LH test
 - Overlaid graph of average temperature
 - Delete entry function
 - Edit entry function
