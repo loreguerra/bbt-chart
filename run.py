@@ -13,13 +13,14 @@ set_credentials()
 conn = connect_to_db()
 cur = conn.cursor()
 
-# selecting date rows
+# selecting all rows
 cur.execute("SELECT DATE, TEMP from BBT_CHART")
 rows = cur.fetchall()
+# sorting rows 
 rows = sorted(rows)
 
-dates = list(row[1] for row in rows)
-print dates
+dates = list(row[0] for row in rows)
+temps = list(row[1] for row in rows)
 
 #post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
 # cycle day 1 separate graph
