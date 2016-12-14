@@ -6,7 +6,8 @@
 
 Clone the repository and in your virtualenv install the requirements in requirements.txt
 
-``` pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 
 BBT Chart was created to enter information into a local PostgreSQL database by default. Create a database and enter your settings into a settings.py file.
@@ -26,17 +27,20 @@ def set_credentials():
 
 Run create_table.py in the command line.
 
-```python create_table.py
+```
+python create_table.py
 ```
 
 Add your data from command line with add_data.py.
 
-```python add_data.py YYYY-MM-DD ##.##
+```
+python add_data.py YYYY-MM-DD ##.##
 ```
 
 Graph your chart from command line with run.py.
 
-```python run.py
+```
+python run.py
 ```
 
 ## Features to add
