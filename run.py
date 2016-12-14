@@ -16,7 +16,7 @@ cur = conn.cursor()
 # selecting all rows
 cur.execute("SELECT DATE, TEMP from BBT_CHART")
 rows = cur.fetchall()
-# sorting rows 
+# sorting rows
 rows = sorted(rows)
 
 dates = list(row[0] for row in rows)
@@ -26,12 +26,12 @@ temps = list(row[1] for row in rows)
 # cycle day 1 separate graph
 #add color marker for temp spikes
 
-# trace = go.Scatter(
-#     x = dates,
-#     y = temps
-# )
-#
-# data = [trace]
-#
-# plot_url = py.plot(data, filename='bbt')
-# #save image, convert to binary, post to twitter, import auth from data
+trace = go.Scatter(
+    x = dates,
+    y = temps
+)
+
+data = [trace]
+
+plot_url = py.plot(data, filename='bbt')
+#save image, convert to binary, post to twitter, import auth from data
