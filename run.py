@@ -23,8 +23,6 @@ dates = list(row[0] for row in rows)
 temps = list(row[1] for row in rows)
 
 #post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
-# cycle day 1 separate graph
-#add color marker for temp spikes
 
 trace = go.Scatter(
     x = dates,
@@ -34,4 +32,3 @@ trace = go.Scatter(
 data = [trace]
 
 plot_url = py.plot(data, filename='bbt')
-#save image, convert to binary, post to twitter, import auth from data

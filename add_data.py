@@ -3,8 +3,6 @@ import sys
 
 from connect import connect_to_db
 
-# add argparse for options via command line
-
 # add new temperature and date from arguments in command line
 # filename counts as first arg
 args = sys.argv
