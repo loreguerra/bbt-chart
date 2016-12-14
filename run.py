@@ -12,11 +12,15 @@ set_credentials()
 
 conn = connect_to_db()
 cur = conn.cursor()
-cur.execute("SELECT DATE from BBT_CHART")
-rows = cur.fetchall()
 
-for row in rows:
-    print row
+# selecting date rows
+cur.execute("SELECT DATE, TEMP from BBT_CHART")
+rows = cur.fetchall()
+rows = sorted(rows)
+
+# dates = list(for row in rows)
+
+
 #post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
 # cycle day 1 separate graph
 #add color marker for temp spikes
