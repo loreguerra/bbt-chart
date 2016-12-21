@@ -3,8 +3,6 @@ import sys
 
 from connect import connect_to_db
 
-# https://twitter.com/search?f=tweets&vertical=default&q=to%3Abbt_chart%20from%3Alorenaelise&src=typd
-
 # add new temperature and date from arguments in command line
 # filename counts as first arg
 args = sys.argv
@@ -27,3 +25,6 @@ cur.execute(SQL, data)
 print "Temperature data added"
 conn.commit()
 conn.close()
+
+# http://stackoverflow.com/questions/4460262/running-a-python-script-with-cron
+# https://twitter.com/search?f=tweets&vertical=default&q=to%3Abbt_chart%20from%3Alorenaelise&src=typd
