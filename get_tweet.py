@@ -22,13 +22,11 @@ data = r.json()
 tweet_data = data['statuses']
 tweet_count = len(tweet_data)
 
-# read tweet, split and check for extra list items
-# else, get_date()
-# sort datetime objects to display correctly
-# will have to split tweet into array and grab [1] instead of filtering for digits
-# then convert to float
+# CHECK IF DATE ALREADY EXISTS
 
-# cycle day 1 can sit as a separate graph on top
+# http://stackoverflow.com/questions/4460262/running-a-python-script-with-cron
+# https://twitter.com/search?f=tweets&vertical=default&q=to%3Abbt_chart%20from%3Alorenaelise&src=typd
+
 
 def get_temp_data(tweet):
     tweet = tweet.split(' ')
