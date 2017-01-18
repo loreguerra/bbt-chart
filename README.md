@@ -50,6 +50,7 @@ python run.py
 - Overlaid graph of average temperature
 - Delete entry function
 - Edit entry function
+- Add "help" function to list functions and args
 - Add argparse for options input from command line
 - Check if table has already been created
 - Allow creating/graphing of multiple tables with options
