@@ -17,7 +17,7 @@ conn = connect_to_db()
 cur = conn.cursor()
 
 # SQL for inserting values into db
-SQL = "UPDATE BBT_CHART SET DATE VALUES (%s) WHERE DATE VALUES (%s)"
+SQL = "UPDATE BBT_CHART SET DATE = (%s) WHERE DATE = (%s);"
 
 # execute SQL command plus data
 cur.execute(SQL, data)
