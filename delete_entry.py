@@ -16,7 +16,7 @@ conn = connect_to_db()
 cur = conn.cursor()
 
 # SQL for inserting values into db
-SQL = "DELETE from BBT_CHART WHERE DATE = (%s);"
+SQL = "DELETE FROM BBT_CHART WHERE DATE = (%s);"
 
 # execute SQL command plus data
 cur.execute(SQL, data)
