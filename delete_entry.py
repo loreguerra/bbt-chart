@@ -3,13 +3,13 @@ import sys
 
 from connect import connect_to_db
 
-# add new temperature and date from arguments in command line
+# edit data from arguments in command line
 # filename counts as first arg
 args = sys.argv
 date_to_edit = args[1] # second arg
 
 # adding items to data
-data = (date_to_edit)
+data = date_to_edit
 
 # connect to database
 conn = connect_to_db()
