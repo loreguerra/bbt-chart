@@ -49,7 +49,6 @@ python run.py
 - Marker for positive LH test
 - Overlaid graph of average temperature
 - Delete entry function
-- Edit entry function
 - Add "help" function to list functions and args
 - Add argparse for options input from command line
 - Check if table has already been created
