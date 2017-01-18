@@ -10,14 +10,14 @@ date_to_edit = args[1] # second arg
 new_date = args[2] #third arg
 
 # adding items to data
-data = (date_to_edit, new_date)
+data = (new_date, date_to_edit)
 
 # connect to database
 conn = connect_to_db()
 cur = conn.cursor()
 
 # SQL for inserting values into db
-SQL = "INSERT INTO BBT_CHART (DATE, TEMP) VALUES (%s, %s);"
+SQL = "UPDATE BBT_CHART SET DATE VALUES (%s) WHERE DATE VALUES (%s)"
 
 # execute SQL command plus data
 cur.execute(SQL, data)
