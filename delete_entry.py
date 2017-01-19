@@ -9,7 +9,7 @@ args = sys.argv
 date_to_delete = args[1] # second arg
 
 # adding items to data
-data = date_to_delete
+data = (date_to_delete, )
 
 # connect to database
 conn = connect_to_db()
