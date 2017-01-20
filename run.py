@@ -26,7 +26,8 @@ temps = list(row[1] for row in rows)
 
 trace = go.Scatter(
     x = dates,
-    y = temps
+    y = temps,
+    marker = dict(color="rgb(16,30,11)")
 )
 
 data = [trace]
