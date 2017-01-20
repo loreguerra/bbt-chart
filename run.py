@@ -29,7 +29,8 @@ data = go.Scatter(
     y = temps
 )
 
-layout = go.Layout()
+layout = go.Layout(
+)
 
 
 figure = go.Figure(data=[data], layout=layout)
