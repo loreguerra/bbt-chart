@@ -24,18 +24,33 @@ temps = list(row[1] for row in rows)
 
 #post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
 
-data = go.Scatter(
-    x = dates,
-    y = temps,
-    mode="lines+markers"
-)
+data = [
+
+    go.Scatter(
+        x = dates,
+        y = temps,
+        mode='lines',
+        marker= dict(
+            color='rgb(199,199,199)'
+        )
+),
+
+    go.Scatter(
+        x = dates,
+        y = temps,
+        mode = 'markers',
+        marker = dict (
+            color='rgb(113,122,122)'
+        )
+    )
+]
 
 layout = go.Layout(
     yaxis= dict()
 )
 
 
-figure = go.Figure(data=[data], layout=layout)
+figure = go.Figure(data=data, layout=layout)
 
 
 plot_url = py.plot(figure, filename='bbt')
