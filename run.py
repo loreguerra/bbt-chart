@@ -20,10 +20,10 @@ rows = cur.fetchall()
 rows = sorted(rows)
 
 high_temps = list(row for row in rows if row[1] >= 97.5)
-print high_temps
+reg_temps = list(row for row in rows if row[1] < 97.5)
 
-dates = list(row[0] for row in rows)
-temps = list(row[1] for row in rows)
+reg_temp_dates = list(row[0] for row in rows)
+reg_temps = list(row[1] for row in rows)
 
 #post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
 
