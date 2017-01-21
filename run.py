@@ -19,6 +19,9 @@ rows = cur.fetchall()
 # sorting rows
 rows = sorted(rows)
 
+high_temps = list(row for row in rows if row[1] >= 97.5)
+print high_temps
+
 dates = list(row[0] for row in rows)
 temps = list(row[1] for row in rows)
 
