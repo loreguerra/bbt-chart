@@ -22,8 +22,11 @@ rows = sorted(rows)
 high_temps = list(row for row in rows if row[1] >= 97.5)
 reg_temps = list(row for row in rows if row[1] < 97.5)
 
-reg_temp_dates = list(row[0] for row in rows)
-reg_temps = list(row[1] for row in rows)
+reg_temp_dates = list(row[0] for row in reg_temps)
+reg_temp_data = list(row[1] for row in reg_temps)
+
+high_temps_dates = []
+high_temp_data = []
 
 #post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
 
