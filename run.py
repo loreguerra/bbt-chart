@@ -26,10 +26,12 @@ temps = list(row[1] for row in rows)
 
 data = go.Scatter(
     x = dates,
-    y = temps
+    y = temps,
+    mode="lines+markers"
 )
 
 layout = go.Layout(
+    yaxis= dict()
 )
 
 
