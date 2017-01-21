@@ -40,6 +40,7 @@ data = [
         y = temps,
         mode = 'markers',
         marker = dict (
+            size=10,
             color='rgb(113,122,122)'
         )
     )
