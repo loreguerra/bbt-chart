@@ -29,19 +29,10 @@ data = [
     go.Scatter(
         x = dates,
         y = temps,
-        mode='lines',
-        marker= dict(
-            color='rgb(199,199,199)'
-        )
-),
-
-    go.Scatter(
-        x = dates,
-        y = temps,
-        mode = 'markers',
+        mode = 'lines+markers',
         marker = dict (
             size=10,
-            color='rgb(113,122,122)'
+            color='rgb(199,199,199)'
         )
     )
 ]
