@@ -19,15 +19,19 @@ rows = cur.fetchall()
 # sorting rows
 rows = sorted(rows)
 
+# put all data into lists for graphing as x,y underlaying graph
 all_dates = list(row[0] for row in rows)
 all_temps = list(row[1] for row in rows)
 
+# separate high and regular dates and temps based on temp
 high_data = list(row for row in rows if row[1] >= 97.5)
 reg_data = list(row for row in rows if row[1] < 97.5)
 
+# separate high temp dates and reg temp dates into lists for use as x axis
 high_dates = list(row[0] for row in high_data)
 reg_dates = list(row[0] for row in reg_data)
 
+# separate high temps and reg temps into lists for use as y axis
 high_temps = list(row[1] for row in high_data)
 reg_temps = list(row[1] for row in reg_data)
 
@@ -35,7 +39,7 @@ reg_temps = list(row[1] for row in reg_data)
 
 data = [
 
-    go.Scatter(
+    go.Scatter(           # first layer line graph for total data
         x = all_dates,
         y = all_temps,
         mode = 'lines',
@@ -44,7 +48,7 @@ data = [
         )
     ),
 
-    go.Scatter(
+    go.Scatter(          # second layer dot graph for regular data
         x = reg_dates,
         y = reg_temps,
         mode = 'markers',
@@ -54,7 +58,7 @@ data = [
         )
     ),
 
-        go.Scatter(
+        go.Scatter(      # third layer dot graph for high data
             x = high_dates,
             y = high_temps,
             mode = 'markers',
