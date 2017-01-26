@@ -47,6 +47,7 @@ data = [
             color='rgb(199,199,199)'
         ),
         showlegend = False,
+        hoverinfo = 'skip',
     ),
 
     go.Scatter(          # second layer dot graph for regular data
