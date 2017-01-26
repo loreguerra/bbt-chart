@@ -35,7 +35,7 @@ data = [
     go.Scatter(
         x = reg_dates,
         y = reg_temps,
-        mode = 'lines+markers',
+        mode = 'markers',
         marker = dict (
             size=10,
             color='rgb(199,199,199)'
@@ -45,7 +45,7 @@ data = [
         go.Scatter(
             x = high_dates,
             y = high_temps,
-            mode = 'lines+markers',
+            mode = 'markers',
             marker = dict (
                 size=10,
                 color='rgb(244,66,98)'
