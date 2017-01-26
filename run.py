@@ -57,7 +57,8 @@ data = [
         marker = dict (
             size=10,
             color='rgb(199,199,199)'
-        )
+        ),
+        name = 'Normal temps'
     ),
 
         go.Scatter(      # third layer dot graph for high data
@@ -67,7 +68,8 @@ data = [
             marker = dict (
                 size=10,
                 color='rgb(244,66,98)'
-            )
+            ),
+            name = 'High temps'
         )
 
 ]
