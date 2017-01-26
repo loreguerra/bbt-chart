@@ -45,7 +45,8 @@ data = [
         mode = 'lines',
         marker = dict (
             color='rgb(199,199,199)'
-        )
+        ),
+        showlegend = False,
     ),
 
     go.Scatter(          # second layer dot graph for regular data
