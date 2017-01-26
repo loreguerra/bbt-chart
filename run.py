@@ -40,7 +40,18 @@ data = [
             size=10,
             color='rgb(199,199,199)'
         )
-    )
+    ),
+
+        go.Scatter(
+            x = high_dates,
+            y = high_temps,
+            mode = 'lines+markers',
+            marker = dict (
+                size=10,
+                color='rgb(244,66,98)'
+            )
+        )
+
 ]
 
 layout = go.Layout(
