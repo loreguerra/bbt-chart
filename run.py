@@ -22,8 +22,8 @@ rows = sorted(rows)
 high_temps = list(row for row in rows if row[1] >= 97.5)
 reg_temps = list(row for row in rows if row[1] < 97.5)
 
+high_temp_dates = list(row[0] for row in high_temps)
 reg_temp_dates = list(row[0] for row in reg_temps)
-reg_temp_data = list(row[1] for row in reg_temps)
 
 high_temps_dates = []
 high_temp_data = []
