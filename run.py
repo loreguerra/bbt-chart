@@ -19,6 +19,9 @@ rows = cur.fetchall()
 # sorting rows
 rows = sorted(rows)
 
+all_dates = list(row[0] for row in rows)
+all_temps = list(row[1] for row in rows)
+
 high_data = list(row for row in rows if row[1] >= 97.5)
 reg_data = list(row for row in rows if row[1] < 97.5)
 
@@ -31,6 +34,15 @@ reg_temps = list(row[1] for row in reg_data)
 #post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
 
 data = [
+
+    go.Scatter(
+        x = all_dates,
+        y = all_temps,
+        mode = 'lines',
+        marker = dict (
+            color='rgb(199,199,199)'
+        )
+    ),
 
     go.Scatter(
         x = reg_dates,
