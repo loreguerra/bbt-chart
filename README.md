@@ -46,6 +46,8 @@ python run.py
 ## Features to add
 - Marker for day one of cycles
 - Marker for positive LH test
+- Add LH/cycle column code to create_table and add_data
+- Create edit files for LH/cycle
 - Overlaid graph of average temperature
 - Pretty print entries
 - Add "help" function to list functions and args

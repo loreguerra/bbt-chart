@@ -11,3 +11,5 @@ cur.execute("""CREATE TABLE BBT_CHART
 print 'BBT chart table created successfully'
 conn.commit()
 conn.close()
+
+# add in values for cycle_begin, pos_lh

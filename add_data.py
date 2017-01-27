@@ -4,6 +4,7 @@ import sys
 from connect import connect_to_db
 
 # add new temperature and date from arguments in command line
+# add in values for cycle_begin, pos_lh <<<<<<
 # filename counts as first arg
 args = sys.argv
 date = args[1] # second arg
