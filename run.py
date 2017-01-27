@@ -24,8 +24,8 @@ all_dates = list(row[0] for row in rows)
 all_temps = list(row[1] for row in rows)
 
 # separate high and regular dates and temps based on temp
-high_data = list(row for row in rows if row[1] >= 97.5)
-reg_data = list(row for row in rows if row[1] < 97.5)
+high_data = list(row for row in rows if row[1] >= 97.6)
+reg_data = list(row for row in rows if row[1] < 97.6)
 
 # separate high temp dates and reg temp dates into lists for use as x axis
 high_dates = list(row[0] for row in high_data)
