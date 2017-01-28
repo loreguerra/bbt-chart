@@ -14,10 +14,14 @@ conn = connect_to_db()
 cur = conn.cursor()
 
 # selecting all rows
-cur.execute("SELECT DATE, TEMP from BBT_CHART")
+cur.execute("SELECT DATE, TEMP, CYCLE_DAY, LH_TEST from BBT_CHART")
 rows = cur.fetchall()
 # sorting rows
 rows = sorted(rows)
+
+cycle_days = list(row[0] for row in rows if row[2] == 'cd1')
+
+pos_lh = list(row[0] for row in rows if row[3] == '+')
 
 # put all data into lists for graphing as x,y underlaying graph
 all_dates = list(row[0] for row in rows)
