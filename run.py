@@ -14,7 +14,7 @@ conn = connect_to_db()
 cur = conn.cursor()
 
 # selecting all rows
-cur.execute("SELECT DATE, TEMP, CYCLE_DAY, LH_TEST from BBT_CHART")
+cur.execute("SELECT * from BBT_CHART")
 rows = cur.fetchall()
 # sorting rows
 rows = sorted(rows)
