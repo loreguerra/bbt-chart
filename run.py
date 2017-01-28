@@ -98,7 +98,7 @@ data = [
                     mode = 'markers',
                     marker = dict (
                         size=10,
-                        color='rgb(204,244,66)'
+                        color='rgb(16, 239, 183)'
                     ),
                     name = 'Positive LH',
                     hoverinfo = 'skip',
