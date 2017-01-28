@@ -37,6 +37,7 @@ reg_temps = list(row[1] for row in reg_data)
 
 # list dates for cycle day 1
 cycle_days = list(row[0] for row in rows if row[2] == 'cd1')
+cycle_day_temps = list(row[1] for row in rows if row[2] == 'cd1')
 
 # list dates for positive LH test
 pos_lh = list(row[0] for row in rows if row[3] == '+')
@@ -76,7 +77,19 @@ data = [
                 color='rgb(244,66,98)'
             ),
             name = 'High temps'
-        )
+        ),
+
+            go.Scatter(      # fourth layer dot graph for cycle day 1
+                x = cycle_days,
+                y = cycle_day_temps,
+                mode = 'markers',
+                marker = dict (
+                    size=10,
+                    color='rgb(116,66,244)'
+                ),
+                name = 'Cycle day 1',
+                hoverinfo = 'skip',
+            ),
 
 ]
 
