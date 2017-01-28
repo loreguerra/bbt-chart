@@ -57,19 +57,19 @@ data = [
         showlegend = False,
         hoverinfo = 'skip',
     ),
-        go.Scatter(      # fifth layer dot graph for positive LH
+        go.Scatter(      # second layer dot graph for positive LH
             x = pos_lh,
             y = pos_lh_temps,
             mode = 'markers',
             marker = dict (
                 size=15,
-                color='rgb(16, 239, 183)'
+                color='rgb(2, 209, 171)'
             ),
             name = 'Positive LH',
             hoverinfo = 'skip',
         ),
 
-    go.Scatter(          # second layer dot graph for regular data
+    go.Scatter(          # third layer dot graph for regular data
         x = reg_dates,
         y = reg_temps,
         mode = 'markers',
@@ -80,7 +80,7 @@ data = [
         name = 'Normal temps'
     ),
 
-        go.Scatter(      # third layer dot graph for high data
+        go.Scatter(      # fourth layer dot graph for high data
             x = high_dates,
             y = high_temps,
             mode = 'markers',
@@ -91,7 +91,7 @@ data = [
             name = 'High temps'
         ),
 
-            go.Scatter(      # fourth layer dot graph for cycle day 1
+            go.Scatter(      # fifth layer dot graph for cycle day 1
                 x = cycle_days,
                 y = cycle_day_temps,
                 mode = 'markers',
