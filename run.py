@@ -92,6 +92,18 @@ data = [
                 hoverinfo = 'skip',
             ),
 
+                go.Scatter(      # fifth layer dot graph for positive LH
+                    x = pos_lh,
+                    y = pos_lh_temps,
+                    mode = 'markers',
+                    marker = dict (
+                        size=10,
+                        color='rgb(204,244,66)'
+                    ),
+                    name = 'Positive LH',
+                    hoverinfo = 'skip',
+                ),
+
 ]
 
 layout = go.Layout(
