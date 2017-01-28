@@ -41,6 +41,7 @@ cycle_day_temps = list(row[1] for row in rows if row[2] == 'cd1')
 
 # list dates for positive LH test
 pos_lh = list(row[0] for row in rows if row[3] == '+')
+pos_lh_temps = list(row[1] for row in rows if row[3] == '+')
 
 #post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
 
