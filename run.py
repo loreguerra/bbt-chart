@@ -57,6 +57,17 @@ data = [
         showlegend = False,
         hoverinfo = 'skip',
     ),
+        go.Scatter(      # fifth layer dot graph for positive LH
+            x = pos_lh,
+            y = pos_lh_temps,
+            mode = 'markers',
+            marker = dict (
+                size=15,
+                color='rgb(16, 239, 183)'
+            ),
+            name = 'Positive LH',
+            hoverinfo = 'skip',
+        ),
 
     go.Scatter(          # second layer dot graph for regular data
         x = reg_dates,
@@ -92,17 +103,6 @@ data = [
                 hoverinfo = 'skip',
             ),
 
-                go.Scatter(      # fifth layer dot graph for positive LH
-                    x = pos_lh,
-                    y = pos_lh_temps,
-                    mode = 'markers',
-                    marker = dict (
-                        size=10,
-                        color='rgb(16, 239, 183)'
-                    ),
-                    name = 'Positive LH',
-                    hoverinfo = 'skip',
-                ),
 
 ]
 
