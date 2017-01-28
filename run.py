@@ -19,10 +19,6 @@ rows = cur.fetchall()
 # sorting rows
 rows = sorted(rows)
 
-cycle_days = list(row[0] for row in rows if row[2] == 'cd1')
-
-pos_lh = list(row[0] for row in rows if row[3] == '+')
-
 # put all data into lists for graphing as x,y underlaying graph
 all_dates = list(row[0] for row in rows)
 all_temps = list(row[1] for row in rows)
@@ -38,6 +34,12 @@ reg_dates = list(row[0] for row in reg_data)
 # separate high temps and reg temps into lists for use as y axis
 high_temps = list(row[1] for row in high_data)
 reg_temps = list(row[1] for row in reg_data)
+
+# list dates for cycle day 1
+cycle_days = list(row[0] for row in rows if row[2] == 'cd1')
+
+# list dates for positive LH test
+pos_lh = list(row[0] for row in rows if row[3] == '+')
 
 #post plotly chart via twitter and @mention originating account (me) - requests.post / convert to binary
 
