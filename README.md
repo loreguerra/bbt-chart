@@ -46,7 +46,6 @@ python run.py
 ## Features to add
 - Check for existing date and offer options for existing data
 - Add option to plot data range
-- Consolidate edit files (use if statement to edit various)
 - Overlaid graph of average temperature
 - Pretty print entries
 - Add "help" function to list functions and args
