@@ -16,7 +16,7 @@ cur.execute(SQL)
 rows = cur.fetchall()
 
 for row in rows:
-    print str(row) + '\n'
+    print row[0] + '\n'
 
 
 conn.commit()
