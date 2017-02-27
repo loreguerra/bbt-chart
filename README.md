@@ -47,7 +47,6 @@ python run.py
 - Check for existing date and offer options for existing data
 - Add option to plot data range
 - Overlaid graph of average temperature
-- Pretty print entries
 - Add "help" function to list functions and args
 - Add argparse for options input from command line
 - Check if table has already been created
