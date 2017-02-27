@@ -45,7 +45,6 @@ python run.py
 
 ## Features to add
 - Add option to plot data range
-- Add LH/cycle column code to add_data
 - Consolidate edit files (use if statement to edit various)
 - Overlaid graph of average temperature
 - Pretty print entries
