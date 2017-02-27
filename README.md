@@ -57,6 +57,7 @@ python run.py
 - Integrate with Twitter Streaming API to automatically add latest tweet from app user to database
 - Post Plotly chart to Twitter and mention app user
 - Create as Python Package
+- Update README
 
 
 ## License
