@@ -47,6 +47,11 @@ Graph your chart from command line with ```run.py```.
 python run.py
 ```
 
+Example chart:
+
+![chart](http://i.imgur.com/indEAsN.jpg)  
+
+
 ## More options  
 
 To view all of the previously entered data, use ```print_data.py```.
@@ -54,6 +59,11 @@ To view all of the previously entered data, use ```print_data.py```.
 ```
 python print_data.py
 ```
+
+Example output in terminal:  
+
+![output](http://i.imgur.com/T3LGbtw.png)  
+
 
 To delete an entry, use ```delete_entry.py``` and add the date to delete.
 
